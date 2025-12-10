@@ -697,7 +697,7 @@ function updateWildPkmn(){
     for (const buff in wildBuffs){ if ( wildBuffs[buff]>0) wildBuffs[buff] = 0 }
     updateWildBuffs()
 
-    if (rng(0.20)) dropItem()
+    if (rng(0.20) && !areas[saved.currentArea]?.trainer) dropItem()
     //document.getElementById(`pkmn-movebox-wild-${exploreCombatWildTurn}-bar`).style.transition = "0s linear"
     //document.getElementById(`pkmn-movebox-wild-${exploreCombatWildTurn}-bar`).style.width = "0%";
 
