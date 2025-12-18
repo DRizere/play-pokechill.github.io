@@ -2526,7 +2526,7 @@ function exploreCombatPlayer() {
     
 
     //abilities
-    if (testAbility(`active`, ability.prankster.id) && moveType == "dark") moveTimerPlayer /= 1.5
+    if (testAbility(`active`, ability.prankster.id) && move[nextMovePlayer].type == "dark") moveTimerPlayer /= 1.5
 
 
     //buff modifiers
@@ -5862,3 +5862,4 @@ window.addEventListener('load', function() {
 
     //updateTeamExp()
 });
+
