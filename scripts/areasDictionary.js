@@ -1450,7 +1450,7 @@ areas.eventMegaAerodactly = {
     level : 100,
     team : {
         slot1 : pkmn.megaAerodactyl,
-        slot1Moves : [move.accelerock.id,move.rockBlast.id, move.airShlash.id, move.earthquake.id],
+        slot1Moves : [move.accelerock.id,move.rockSlide.id, move.airShlash.id, move.earthquake.id],
     },
     reward : [item.aerodactylite, pkmn.aerodactyl]
 }

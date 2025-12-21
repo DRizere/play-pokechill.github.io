@@ -7447,7 +7447,7 @@ pkmn.abomasnow = {
 pkmn.megaAbomasnow = {
     type: ["grass","ice"],
     bst: {
-        hp: 90,
+        hp: 120,
         atk: 132,
         def: 105,
         satk: 132,
