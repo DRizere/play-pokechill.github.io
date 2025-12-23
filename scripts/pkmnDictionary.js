@@ -1307,7 +1307,7 @@ pkmn.steelix = {
         sdef: 65,
         spe: 30,
     },
-    evolve: function() { return { 1: { pkmn: pkmn.steelix, item: item.steelixite } } },
+    evolve: function() { return { 1: { pkmn: pkmn.megaSteelix, item: item.steelixite } } },
     hiddenAbility: ability.sheerForce,
 }
 
@@ -13866,4 +13866,5 @@ function statToRating(baseStat) {
   const r = 1 + (baseStat - 20) * (5 / 180);
   return Math.min(6, Math.max(1, Math.round(r)));
 }
+
 
