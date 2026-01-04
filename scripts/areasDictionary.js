@@ -1263,7 +1263,7 @@ areas.fierySummit = {
     },
     drops: {
         common : [item.nothing],
-        rare : [item.fieryRock]
+        uncommon : [item.fieryRock]
     },
 }
 
@@ -1437,7 +1437,7 @@ areas.primitiveGrove = {
     },
     drops: {
         common : [item.nothing],
-        rare : [item.ancientOrchid]
+        uncommon : [item.ancientOrchid]
     },
 }
 
@@ -1455,7 +1455,7 @@ areas.protonCity = {
     },
     drops: {
         common : [item.nothing],
-        rare : [item.futureDisk]
+        uncommon : [item.futureDisk]
     },
 }
 
@@ -3686,5 +3686,6 @@ for (const i in areas){
         areas[i].unlockDescription = `Defeat Gym Leader Phoebe in VS to unlock`
         areas[i].unlockRequirement = function() { return areas.vsGymLeaderPhoebe.defeated }
     }
+
 
 }
