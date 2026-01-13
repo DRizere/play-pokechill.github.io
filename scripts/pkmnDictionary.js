@@ -16526,7 +16526,7 @@ pkmn.gholdengo = {
 }
 
 // 1001 Wo-Chien
-pkmn.wochien = {
+pkmn.woChien = {
   type: ["dark", "grass"],
   bst: {
     hp: 100,
@@ -16539,7 +16539,7 @@ pkmn.wochien = {
 }
 
 // 1002 Chien-Pao
-pkmn.chienpao = {
+pkmn.chienPao = {
   type: ["dark", "ice"],
   bst: {
     hp: 80,
@@ -16552,7 +16552,7 @@ pkmn.chienpao = {
 }
 
 // 1003 Ting-Lu
-pkmn.tinglu = {
+pkmn.tingLu = {
   type: ["dark", "ground"],
   bst: {
     hp: 155,
@@ -16565,7 +16565,7 @@ pkmn.tinglu = {
 }
 
 // 1004 Chi-Yu
-pkmn.chiyu = {
+pkmn.chiYu = {
   type: ["dark", "fire"],
   bst: {
     hp: 55,
