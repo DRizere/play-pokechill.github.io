@@ -1934,6 +1934,7 @@ move.coil = {
     power: 0,
     info: function() {return `Increases Attack and Defense by 50%`},
     hitEffect: function(target) { moveBuff(target,'atkup1',"self"); moveBuff(target,'defup1',"self") },
+    restricted: true,
 }
 
 move.acidArmor = {
