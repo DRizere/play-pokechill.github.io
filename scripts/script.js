@@ -155,9 +155,13 @@ function updateGameVersion() {
   saved.tutorialStep = `none`
   }
 
+  if (saved.version<2.6){
+  saved.mysteryGiftClaimed = false
+  }
 
 
-  saved.version = 2.5
+
+  saved.version = 2.6
   document.getElementById(`game-version`).innerHTML = `v${saved.version}`
 }
 
@@ -524,12 +528,12 @@ function learnPkmnMoveSeeded(id, level, mod, seed, exclude = []) {
 
 
 //--Gives Pokemon appropiate abilities
-function learnPkmnAbility(id) {
+function learnPkmnAbility(id,boost=1) {
     const types = pkmn[id].type;
 
     let tier = 1;
-    if (rng(0.20)) tier = 2;
-    else if (rng(0.08)) tier = 3;
+    if (rng(0.20*boost)) tier = 2;
+    if (rng(0.06*boost)) tier = 3;
 
     const pool = Object.keys(ability).filter(a => {
         const ab = ability[a];
