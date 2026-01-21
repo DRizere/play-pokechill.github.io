@@ -2236,7 +2236,7 @@ function exploreCombatPlayer() {
         if (team[exploreActiveMember].item == item.lifeOrb.id) totalPower *= item.lifeOrb.power()
 
         //held items w specific damage bonus
-        if (item[team[exploreActiveMember].item].heldBonusPkmn && item[team[exploreActiveMember].item].heldBonusPkmn() == team[exploreActiveMember].pkmn.id) totalPower *= item[team[exploreActiveMember].item].heldBonusPower()
+        if (item[team[exploreActiveMember].item]?.heldBonusPkmn && item[team[exploreActiveMember].item].heldBonusPkmn() == team[exploreActiveMember].pkmn.id) totalPower *= item[team[exploreActiveMember].item].heldBonusPower()
 
         if (nextMove.power === 0) totalPower = 0
 
@@ -7212,3 +7212,4 @@ window.addEventListener('load', function() {
 
     //updateTeamExp()
 });
+
