@@ -1334,7 +1334,7 @@ for (const i in item){
         item[i].move = i.slice(0, -2); 
         item[i].type = "tm";
         
-        item[i].info = function () { return `Teach the move <span data-move="${format(move[item[i].move].id)}" ><span  style="color:white;cursor:help;padding: 0.1rem 0.7rem; border-radius: 0.2rem; font-size:1.1rem; width: auto; background: ${returnTypeColor(move[item[i].move].type)}">${format(move[item[i].move].id)}</span></span> to a ${joinWithOr(move[item[i].move].moveset)} Pokemon`}        
+        item[i].info = function () { return `Teach the move <span data-move="${move[item[i].move].id}" ><span  style="color:white;cursor:help;padding: 0.1rem 0.7rem; border-radius: 0.2rem; font-size:1.1rem; width: auto; background: ${returnTypeColor(move[item[i].move].type)}">${format(move[item[i].move].id)}</span></span> to a ${joinWithOr(move[item[i].move].moveset)} Pokemon`}        
 
     }
 }
