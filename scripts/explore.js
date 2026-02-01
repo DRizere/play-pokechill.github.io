@@ -2737,10 +2737,10 @@ function typeEffectiveness(attacking, defending) {
 
   if (areas[saved.currentArea]?.fieldEffect?.includes(field.weirdRoom.id)) {
     if (result == 0.75) result = 1.25
-    if (result == 0.5) result = 1.5
-    if (result == 1.5) result = 0.75
-    if (result == 2.25) result = 0.5
-    if (result == 0.25) result = 2.25
+    else if (result == 0.5) result = 1.5
+    else if (result == 1.5) result = 0.75
+    else if (result == 2.25) result = 0.5
+    else if (result == 0.25) result = 2.25
   }
 
 
