@@ -8255,6 +8255,8 @@ function wonderTrade(){
         }
 
         chosenPokemon = arrayPick(obtainedPokemon)
+        if (obtainedPokemon.length==0) chosenPokemon = pkmn.magikarp.id
+
     }
 
     if (chosenShiny) pkmn[chosenPokemon].shiny = true

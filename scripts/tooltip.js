@@ -381,6 +381,9 @@ function tooltipData(category, ttdata){
        <span style="filter: hue-rotate(-${season[saved.currentSeason].hue}deg)">${areas[i].unlockDescription}</span>
        </span>`
 
+
+    if (areas[i].hpPercentage == null) areas[i].hpPercentage = 100 //safefail
+
     const div = document.createElement("div");
     div.className = "explore-ticket frontier-ticket";
     div.style.filter = `hue-rotate(${season[saved.currentSeason].hue}deg)`
