@@ -241,7 +241,7 @@ areas.verdantForest = {
     icon: pkmn.caterpie,
     spawns: {
         common : [pkmn.caterpie,pkmn.exeggcute, pkmn.scatterbug],
-        uncommon : [pkmn.sudowoodo],
+        uncommon : [pkmn.bonsly],
         rare : [pkmn.scyther]
     },
     drops: {
