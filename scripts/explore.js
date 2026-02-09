@@ -6684,16 +6684,16 @@ function updateWildBuffs(){
     document.getElementById("wild-buff-list").innerHTML = ""
 
 
-    if (areas[saved.currentArea].fieldEffect?.includes(field.harshSun.id)) {saved.weather="sunny"; saved.weatherTimer = 5}
-    if (areas[saved.currentArea].fieldEffect?.includes(field.thickFog.id)) {saved.weather="foggy"; saved.weatherTimer = 5}
-    if (areas[saved.currentArea].fieldEffect?.includes(field.coarseSandstorm.id)) {saved.weather="sandstorm"; saved.weatherTimer = 5}
-    if (areas[saved.currentArea].fieldEffect?.includes(field.fierceHail.id)) {saved.weather="hail"; saved.weatherTimer = 5}
-    if (areas[saved.currentArea].fieldEffect?.includes(field.heavyRain.id)) {saved.weather="rainy"; saved.weatherTimer = 5}
-    if (areas[saved.currentArea].fieldEffect?.includes(field.electricField.id)) {saved.weather="electricTerrain"; saved.weatherTimer = 5}
-    if (areas[saved.currentArea].fieldEffect?.includes(field.grassyField.id)) {saved.weather="grassyTerrain"; saved.weatherTimer = 5}
-    if (areas[saved.currentArea].fieldEffect?.includes(field.mistyField.id)) {saved.weather="mistyTerrain"; saved.weatherTimer = 5}
+    if (areas[saved.currentArea]?.fieldEffect?.includes(field.harshSun.id)) {saved.weather="sunny"; saved.weatherTimer = 5}
+    if (areas[saved.currentArea]?.fieldEffect?.includes(field.thickFog.id)) {saved.weather="foggy"; saved.weatherTimer = 5}
+    if (areas[saved.currentArea]?.fieldEffect?.includes(field.coarseSandstorm.id)) {saved.weather="sandstorm"; saved.weatherTimer = 5}
+    if (areas[saved.currentArea]?.fieldEffect?.includes(field.fierceHail.id)) {saved.weather="hail"; saved.weatherTimer = 5}
+    if (areas[saved.currentArea]?.fieldEffect?.includes(field.heavyRain.id)) {saved.weather="rainy"; saved.weatherTimer = 5}
+    if (areas[saved.currentArea]?.fieldEffect?.includes(field.electricField.id)) {saved.weather="electricTerrain"; saved.weatherTimer = 5}
+    if (areas[saved.currentArea]?.fieldEffect?.includes(field.grassyField.id)) {saved.weather="grassyTerrain"; saved.weatherTimer = 5}
+    if (areas[saved.currentArea]?.fieldEffect?.includes(field.mistyField.id)) {saved.weather="mistyTerrain"; saved.weatherTimer = 5}
 
-    if (areas[saved.currentArea].fieldEffect?.includes(field.deltaStream.id)) {saved.weatherTimer = 0}
+    if (areas[saved.currentArea]?.fieldEffect?.includes(field.deltaStream.id)) {saved.weatherTimer = 0}
 
 
     for (const i in wildBuffs) {
