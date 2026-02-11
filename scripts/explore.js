@@ -2479,8 +2479,8 @@ function exploreCombatPlayer() {
         if ( testAbility(`active`, ability.thousandArms.id)) typeMultiplier=1.5
 
         if (defender.temporalType) {
-            if (typeEffectiveness(moveType, defender.temporalType)>1) typeMultiplier *= 1.25
-            if (typeEffectiveness(moveType, defender.temporalType)<1) typeMultiplier *= 0.75 
+            if (typeEffectiveness(moveType, defender.temporalType)>1) typeMultiplier += 0.25
+            if (typeEffectiveness(moveType, defender.temporalType)<1) typeMultiplier -= 0.25 
         } 
 
         //this wont exactly do what the move says it does, but eh, close enough
