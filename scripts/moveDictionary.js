@@ -4786,7 +4786,8 @@ move.howl = {
     power: 0,
     info: function() {return `Increases Attack by 100% to the entire team`},
     hitEffect: function(target) { moveBuff(target,'atkup2',"team")},
-    affectedBy: [ability.cacophony.id]
+    affectedBy: [ability.cacophony.id],
+    restricted : true,
 }
 
 move.aromaticMist = {
